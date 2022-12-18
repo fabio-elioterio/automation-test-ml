@@ -2,7 +2,8 @@
 Automation Test of Marcado Livro project with: Robot Framework, Java + Rest Assured & Cucumber and Kotlin with Rest Assured.
 
 ## Customer Test Cases
-1 - Should Create a Customer with Success
+**1 - Should Create a Customer with Success**
+
 **Given** that I have the customer's request body
 
 **When** I try to create the customer with the method 'POST'
@@ -11,14 +12,16 @@ Automation Test of Marcado Livro project with: Robot Framework, Java + Rest Assu
 
 **And** I get the staus code 'Created'
 
-2 - Should Not Create a Customer with Same Name
+**2 - Should Not Create a Customer with Same Name**
+
 **Given**
 
 **When**
 
 **Then**
 
-3 - Should Not Create a Customer with Same Email
+**3 - Should Not Create a Customer with Same Email**
+
 **Given**
 
 **When**
