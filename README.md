@@ -1,4 +1,4 @@
-# automation-test-ml
+# Mercado Livro Automation Tests
 Automation Test of Marcado Livro project with: Robot Framework, Java + Rest Assured & Cucumber and Kotlin with Rest Assured.
 
 You can see the project code and everthing about how to config and use it here: https://github.com/fabio-elioterio/mercado-livro-kotlin
