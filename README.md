@@ -14,13 +14,13 @@ You can see the project code and everthing about how to config and use it here: 
 
 **And** I get the staus code 'Created'
 
-**2 - Should Not Create a Customer with Same Name**
+**2 - Should Not Create a Customer with Name alredy registered**
 
-**Given**
+**Given** that I have the customer's request body 
 
-**When**
+**When** I try to create the customer with the method 'POST'
 
-**Then**
+**Then** I get the status code error 422 with the message 'Nome já cadastrado'
 
 **3 - Should Not Create a Customer with Same Email**
 
