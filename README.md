@@ -28,8 +28,10 @@ You can see the project code and everthing about how to config and use it here: 
 
 **3 - Should Not Create a Customer with Same Email**
 
-**Given**
+**Given** that I have the customer's request body 
 
-**When**
+**When** I try to create the customer with the method 'POST'
 
-**Then**
+**Then** I should get the status code 422 with the message 'Email já cadastrado'
+
+**And** the internal code shold be 'ML-001'
