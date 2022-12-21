@@ -26,6 +26,14 @@ Got error 422 when the customer name is registered
     Status Should Be    422    ${RESPONSE}
     Set Test Variable    ${RESPONSE}
 
+Got error 422 when the customer email is registered
+    ${HEADERS}    Create Dictionary    content-type=application/json   
+    ${RESPONSE}    POST    url=${URL}/customers    data={"name": "Fenrir", "email": "joaojunior@email.com", "password": "65421"}
+    ...                                          headers=${HEADERS}    expected_status=anything
+    Log    ${RESPONSE.text}
+    Status Should Be    422    ${RESPONSE}
+    Set Test Variable    ${RESPONSE}
+
 ## ASSERTS
 Status Code Should Be
     [Arguments]    ${WISHED_STATUS_CODE}

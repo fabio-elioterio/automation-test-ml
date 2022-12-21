@@ -15,3 +15,9 @@ Should Not Create a Customer with Name alredy registered
     Got error 422 when the customer name is registered
     Internal Code Should Be    ML-001
     Error Message Should Be    Nome já cadastrado
+
+Should Not Create a Customer with Email alredy registered
+    [Tags]    email_registered
+    Got error 422 when the customer email is registered
+    Internal Code Should Be    ML-001
+    Error Message Should Be    Email já cadastrado
